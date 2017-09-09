@@ -13,11 +13,56 @@
         android:id="@+id/text_Layout">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/tvControl"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:text="0"
-            android:textSize="40sp" />
+            android:layout_height="62dp"
+            android:textSize="50sp" />
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:textSize="50sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="6dp">
+            <Button
+                android:id="@+id/cancelAll2"
+                android:layout_width="100sp"
+                android:layout_height="80sp"
+                android:text="CE"
+                android:textSize="40dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/background_light"/>
+            <Button
+                android:id="@+id/cancelAll"
+                android:layout_width="100sp"
+                android:layout_height="80sp"
+                android:text="C"
+                android:textSize="40dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/background_light"/>
+
+            <Button
+                android:id="@+id/cancelOne"
+                android:layout_width="100sp"
+                android:layout_height="80sp"
+                android:background="@color/colorPrimary"
+                android:text="©"
+                android:textSize="40sp"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/divide"
+                android:layout_width="100sp"
+                android:layout_height="80sp"
+                android:text="÷"
+                android:textSize="40dp"
+                android:background="@android:color/background_dark"
+                android:textColor="@android:color/background_light"/>
+        </LinearLayout>
+
     </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -27,7 +72,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingLeft="6dp">
 
                     <Button
                         android:id="@+id/seven"
@@ -35,7 +81,6 @@
                         android:layout_height="100dp"
                         android:background="@color/colorPrimary"
                         android:backgroundTint="@color/colorPrimary"
-                        android:onClick="onClick"
                         android:text="7"
                         android:textColor="@android:color/background_light"
                         android:textSize="40sp"
@@ -47,7 +92,6 @@
                         android:layout_height="100dp"
                         android:background="@color/colorPrimary"
                         android:backgroundTint="@color/colorPrimary"
-                        android:onClick="onClick"
                         android:text="8"
                         android:textColor="@android:color/background_light"
                         android:textSize="40sp"
@@ -59,29 +103,26 @@
                         android:layout_height="100dp"
                         android:background="@color/colorPrimary"
                         android:backgroundTint="@color/colorPrimary"
-                        android:onClick="onClick"
                         android:text="9"
                         android:textColor="@android:color/background_light"
                         android:textSize="40sp"
                         tools:backgroundTint="@color/colorPrimary" />
 
                     <Button
-                        android:id="@+id/divide"
+                        android:id="@+id/multiply"
                         android:layout_width="100sp"
                         android:layout_height="100dp"
-                        android:background="@color/colorPrimary"
-                        android:backgroundTint="@color/colorPrimary"
-                        android:onClick="onClickSign"
-                        android:text="/"
+                        android:background="@android:color/holo_green_dark"
+                        android:text="x"
                         android:textColor="@android:color/background_light"
-                        android:textSize="40sp"
-                        tools:backgroundTint="@color/colorPrimary" />
+                        android:textSize="40sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingLeft="6dp">
 
                     <Button
                         android:id="@+id/four"
@@ -89,7 +130,6 @@
                         android:layout_height="100dp"
                         android:background="@color/colorPrimary"
                         android:backgroundTint="@color/colorPrimary"
-                        android:onClick="onClick"
                         android:text="4"
                         android:textColor="@android:color/background_light"
                         android:textSize="40sp"
@@ -101,7 +141,6 @@
                         android:layout_height="100dp"
                         android:background="@color/colorPrimary"
                         android:backgroundTint="@color/colorPrimary"
-                        android:onClick="onClick"
                         android:text="5"
                         android:textColor="@android:color/background_light"
                         android:textSize="40sp"
@@ -113,29 +152,27 @@
                         android:layout_height="100dp"
                         android:background="@color/colorPrimary"
                         android:backgroundTint="@color/colorPrimary"
-                        android:onClick="onClick"
                         android:text="6"
                         android:textColor="@android:color/background_light"
                         android:textSize="40sp"
                         tools:backgroundTint="@color/colorPrimary" />
 
                     <Button
-                        android:id="@+id/multiply"
+                        android:id="@+id/substract"
                         android:layout_width="100sp"
                         android:layout_height="100dp"
                         android:background="@color/colorPrimary"
-                        android:backgroundTint="@color/colorPrimary"
-                        android:onClick="onClickSign"
-                        android:text="*"
+                        android:backgroundTint="@android:color/holo_red_light"
+                        android:text="-"
                         android:textColor="@android:color/background_light"
-                        android:textSize="40sp"
-                        tools:backgroundTint="@color/colorPrimary" />
+                        android:textSize="40sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:paddingLeft="6dp">
 
                     <Button
                         android:id="@+id/one"
@@ -143,7 +180,6 @@
                         android:layout_height="100dp"
                         android:background="@color/colorPrimary"
                         android:backgroundTint="@color/colorPrimary"
-                        android:onClick="onClick"
                         android:text="1"
                         android:textColor="@android:color/background_light"
                         android:textSize="40sp"
@@ -155,7 +191,6 @@
                         android:layout_height="100dp"
                         android:background="@color/colorPrimary"
                         android:backgroundTint="@color/colorPrimary"
-                        android:onClick="onClick"
                         android:text="2"
                         android:textColor="@android:color/background_light"
                         android:textSize="40sp"
@@ -167,62 +202,7 @@
                         android:layout_height="100dp"
                         android:background="@color/colorPrimary"
                         android:backgroundTint="@color/colorPrimary"
-                        android:onClick="onClick"
                         android:text="3"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="40sp"
-                        tools:backgroundTint="@color/colorPrimary" />
-
-                    <Button
-                        android:id="@+id/substract"
-                        android:layout_width="100sp"
-                        android:layout_height="100dp"
-                        android:background="@color/colorPrimary"
-                        android:backgroundTint="@color/colorPrimary"
-                        android:onClick="onClickSign"
-                        android:text="-"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="40sp"
-                        tools:backgroundTint="@color/colorPrimary" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <Button
-                        android:id="@+id/point"
-                        android:layout_width="100sp"
-                        android:layout_height="100dp"
-                        android:background="@color/colorPrimary"
-                        android:backgroundTint="@color/colorPrimary"
-                        android:onClick="onClick"
-                        android:text="."
-                        android:textColor="@android:color/background_light"
-                        android:textSize="40sp"
-                        tools:backgroundTint="@color/colorPrimary" />
-
-                    <Button
-                        android:id="@+id/zero"
-                        android:layout_width="100sp"
-                        android:layout_height="100dp"
-                        android:background="@color/colorPrimary"
-                        android:backgroundTint="@color/colorPrimary"
-                        android:onClick="onClick"
-                        android:text="0"
-                        android:textColor="@android:color/background_light"
-                        android:textSize="40sp"
-                        tools:backgroundTint="@color/colorPrimary" />
-
-                    <Button
-                        android:id="@+id/equals"
-                        android:layout_width="100sp"
-                        android:layout_height="100dp"
-                        android:background="@color/colorPrimary"
-                        android:backgroundTint="@color/colorPrimary"
-                        android:onClick="onClickSign"
-                        android:text="="
                         android:textColor="@android:color/background_light"
                         android:textSize="40sp"
                         tools:backgroundTint="@color/colorPrimary" />
@@ -231,13 +211,55 @@
                         android:id="@+id/add"
                         android:layout_width="100sp"
                         android:layout_height="100dp"
+                        android:background="@android:color/holo_blue_dark"
+                        android:text="+"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="40sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="6dp">
+
+                    <Button
+                        android:id="@+id/point"
+                        android:layout_width="100sp"
+                        android:layout_height="100dp"
+                        android:background="@android:color/holo_red_dark"
+                        android:text="."
+                        android:textColor="@android:color/background_light"
+                        android:textSize="40sp" />
+
+                    <Button
+                        android:id="@+id/zero"
+                        android:layout_width="100sp"
+                        android:layout_height="100dp"
                         android:background="@color/colorPrimary"
                         android:backgroundTint="@color/colorPrimary"
-                        android:onClick="onClickSign"
-                        android:text="+"
+                        android:text="0"
                         android:textColor="@android:color/background_light"
                         android:textSize="40sp"
                         tools:backgroundTint="@color/colorPrimary" />
+
+                    <Button
+                        android:id="@+id/off"
+                        android:layout_width="100sp"
+                        android:layout_height="100dp"
+                        android:background="@android:color/holo_purple"
+                        android:text="OFF"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="40sp" />
+
+                    <Button
+                        android:id="@+id/equals"
+                        android:layout_width="100sp"
+                        android:layout_height="100dp"
+                        android:background="@android:color/holo_orange_dark"
+                        android:text="="
+                        android:textColor="@android:color/background_light"
+                        android:textSize="40sp" />
                 </LinearLayout>
 
             </LinearLayout>
