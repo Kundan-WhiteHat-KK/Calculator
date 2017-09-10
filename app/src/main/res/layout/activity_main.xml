@@ -28,10 +28,10 @@
             android:orientation="horizontal"
             android:paddingLeft="6dp">
             <Button
-                android:id="@+id/cancelAll2"
+                android:id="@+id/history"
                 android:layout_width="100sp"
                 android:layout_height="80sp"
-                android:text="CE"
+                android:text="֍"
                 android:textSize="40dp"
                 android:background="@color/colorPrimary"
                 android:textColor="@android:color/background_light"/>

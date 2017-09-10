@@ -1,17 +1,22 @@
 package com.kk_xample.code.calculator;
 
-import android.provider.Settings;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button add,substract,multiply,divide,equal;
     private Button one,two,three,four,five,six,seven,eight,nine,zero,point;
-    private Button clean1,clean2,clean3,off;
+    private Button clean1,clean2,history,off;
     private TextView intro,result;
     private final char ADDITION = '+', SUBSTRACTION = '-', MULTIPLICATION = '*', DIVISION = '/',EQUAL = '=';
     private double val1 = Double.NaN, val2;
@@ -148,10 +153,10 @@ public class MainActivity extends AppCompatActivity {
                 result.setText(null);
             }
         });
-        clean3.setOnClickListener(new View.OnClickListener() {
+        history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                val1 = Double.NaN;
+               val1 = Double.NaN;
                 val2 = Double.NaN;
                 intro.setText(null);
                 result.setText(null);
@@ -185,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
 
         clean1 = (Button)findViewById(R.id.cancelOne);
         clean2 = (Button)findViewById(R.id.cancelAll);
-        clean3 = (Button)findViewById(R.id.cancelAll2);
+        history = (Button)findViewById(R.id.history);
         off = (Button)findViewById(R.id.off);
 
         intro = (TextView)findViewById(R.id.tvControl);
